@@ -188,8 +188,7 @@
         }
 
         // Function to watch an ad and update stats
-        function watchAd() {
-            if (typeof show_8610253 === 'function') {
+        function watchAd()
                 show_8610253().then(() => {
                     // When the ad is shown, we add points
                     watchedAdsCount++;
@@ -202,7 +201,6 @@
                     // Update progress circle
                     updateProgressCircle();
                 });
-            }
         }
 
         // Update progress circle based on watched ads
@@ -213,7 +211,7 @@
 
         // Function to start auto showing ads
         function startAutoAds() {
-            autoAdInterval = setInterval(watchAd, 5000); // Auto show ad every 5 seconds
+            autoAdInterval = setInterval(watchAd, 000); // Auto show ad every 5 seconds
             document.getElementById('auto-ad-btn').disabled = true;
             document.getElementById('stop-auto-btn').disabled = false;
         }
