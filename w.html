@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <script src='//niphaumeenses.net/vignette.min.js' data-zone='8580352' data-sdk='show_8580352'></script>
+    <script src='//niphaumeenses.net/vignette.min.js' data-zone='8610253' data-sdk='show_8610253'></script>
     <script>
         let watchedAds = 0;
         let earnedPoints = 0;
@@ -152,10 +152,10 @@
 
         // Function to display an ad
         function showAd() {
-            if (typeof show_8580352 === 'function') {
-                show_8580352().then(() => {
+            if (typeof show_8610253 === 'function') {
+                show_8610253().then(() => {
                     watchedAds++;
-                    earnedPoints += 10; // প্রতিটি অ্যাডে ১০ পয়েন্ট
+                    earnedPoints += 1; // প্রতিটি অ্যাডে ১০ পয়েন্ট
                     updateDisplay();
                 }).catch(error => {
                     console.error('Ad failed to load or display:', error);
@@ -169,7 +169,7 @@
         function updateDisplay() {
             document.getElementById('watchedAds').innerText = watchedAds;
             document.getElementById('earnedPoints').innerText = earnedPoints;
-            document.getElementById('progress').innerText = `${watchedAds * 10}%`;
+            document.getElementById('progress').innerText = `${watchedAds * 1}%`;
         }
 
         // Toggle Auto Ads
