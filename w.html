@@ -265,7 +265,7 @@
 
         // Function to send withdrawal request to admin
         function sendWithdrawRequestToAdmin(message) {
-            fetch(`https://api.telegram.org/bot${7055226175:AAF4RmUFVaeJgxVTDxvSC_DSB5QZUVpLGas}/sendMessage?chat_id=${6693287384}&text=${encodeURIComponent(message)}`)
+            fetch(`https://api.telegram.org/bot$7055226175:AAF4RmUFVaeJgxVTDxvSC_DSB5QZUVpLGas/sendMessage?chat_id=$6693287384&text=${encodeURIComponent(message)}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.ok) {
